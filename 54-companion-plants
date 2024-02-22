@@ -1,0 +1,66 @@
+public Boolean companionPlants(String plant1, String plant2) {
+    
+    switch on plant1{
+        when 'lettuce'{
+            if(plant2 == 'cucumbers' || plant2 == 'onions'){
+                return true;
+            }
+        }
+        when 'onions'{
+            if(plant2 == 'carrots' || plant2 == 'tomatoes'){
+                return true;
+            }
+        }
+        when 'cucumbers'{
+            if(plant2 == 'lettuce'){
+                return true;
+            }
+        }
+        when 'carrots'{
+            if(plant2 == 'onions'){
+                return true;
+            }
+        }
+        when 'tomatoes'{
+            if(plant2 == 'onions'){
+                return true;
+            }
+        }
+        when else{
+            return false;
+        }
+    }
+    
+    switch on plant2{
+        when 'lettuce'{
+            if(plant1 == 'cucumbers' || plant1 == 'onions'){
+                return true;
+            }
+        }
+        when 'onions'{
+            if(plant1 == 'carrots' || plant1 == 'tomatoes'){
+                return true;
+            }
+        }
+        when 'cucumbers'{
+            if(plant1 == 'lettuce'){
+                return true;
+            }
+        }
+        when 'carrots'{
+            if(plant1 == 'onions'){
+                return true;
+            }
+        }
+        when 'tomatoes'{
+            if(plant1 == 'onions'){
+                return true;
+            }
+        }
+        when else{
+            return false;
+        }
+    }
+    
+    return false;
+}
