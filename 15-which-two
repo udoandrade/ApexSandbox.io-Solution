@@ -1,0 +1,18 @@
+public String whichTwo(Integer a, Integer b, Integer c) {
+    
+    String resp;
+    
+    if ((a + b) == c) {
+        resp = 'c';
+        return resp;
+    }else if ((a + c) == b) {
+        resp = 'b';
+        return resp;
+    }else if ((b + c) == a) {
+        resp = 'a';
+        return resp;
+    }else {
+        return '';
+    }
+
+}
