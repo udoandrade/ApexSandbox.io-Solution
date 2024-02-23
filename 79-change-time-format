@@ -1,0 +1,28 @@
+public String changeTimeFormat(String strTime) {
+    
+    Integer hour;
+    String timer;
+    hour = Integer.valueOf(strTime.substringBefore(':'));
+
+    if (hour == 00) {
+        timer = '12:' + strTime.substringAfter(':') + ' AM';
+        return timer;
+    }else if (hour < 10) {
+        timer = '0' + String.valueOf(hour) + ':' + strTime.substringAfter(':') + ' AM';
+        return timer;
+    }else if (hour <= 11) {
+        timer = String.valueOf(hour) + ':' + strTime.substringAfter(':') + ' AM';
+        return timer;
+        }else if (hour == 12){
+        timer = '12:' + strTime.substringAfter(':') + ' PM';
+        return timer;
+    }else if (hour < 22) {
+    hour = hour - 12;
+    timer = '0' + String.valueOf(hour) + ':' + strTime.substringAfter(':') + ' PM';
+    return timer;
+    }
+    hour = hour - 12;
+    timer = String.valueOf(hour) + ':' + strTime.substringAfter(':') + ' PM';
+    return timer;
+    
+}
