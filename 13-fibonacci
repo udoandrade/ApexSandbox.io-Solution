@@ -1,0 +1,14 @@
+public Integer fibonacci(Integer n) {
+    
+    Integer atual = 0;
+    Integer ult = 1;
+    Integer pen = 0;
+
+    for (Integer i = 1; i <= n; i++) {
+        atual = pen + ult;
+        pen = ult;
+        ult = atual;
+    }
+    
+    return pen;
+}
