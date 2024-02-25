@@ -1,0 +1,11 @@
+public Boolean sameParent(Contact c, Opportunity opp) {
+    
+    if (String.isEmpty(c.AccountId) || String.isEmpty(opp.AccountId)) {
+        return false;
+    }else if (c.AccountId != opp.AccountId) {
+        return false;
+    }
+    
+    return true;
+
+}
