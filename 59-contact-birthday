@@ -1,0 +1,11 @@
+public Boolean isBirthday(Contact c) {
+    
+    Date hoje = System.Today();
+
+    if (c.Birthdate.day() == hoje.day() && c.Birthdate.month() == hoje.month()) {
+        return true;
+    }else {
+        return false;
+    }  
+      
+}
