@@ -1,0 +1,17 @@
+public Boolean duplicateContacts(Contact c1, Contact c2) {
+    
+    if (!String.isEmpty(c1.Email) && !String.isEmpty(c2.Email)) {
+        if (c1.Email == c2.Email) {
+            return true;
+        }
+    }
+    
+    if (!String.isEmpty(c1.Phone) && !String.isEmpty(c2.Phone)) {
+        if (c1.Phone == c2.Phone) {
+            return true;
+        }
+    }
+
+    return false;
+
+}
