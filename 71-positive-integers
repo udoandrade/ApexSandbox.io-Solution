@@ -1,0 +1,13 @@
+public List<Integer> positiveIntegers(List<Integer> numbers) {
+    
+    Integer tam =0;
+    List<Integer> positivesOnly = new List<Integer>();
+
+    for (Integer i = 0; i < tam; i++) {
+        if (num <= 0) {
+            numbers.remove(i);
+        }
+    }
+
+    return numbers;
+}
