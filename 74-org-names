@@ -1,0 +1,17 @@
+public List<String> orgNames(List<String> adjectives, List<String> animals) {
+    
+    return generateOrgNames(adjectives, animals);
+}
+
+public List<String> generateOrgNames(List<String> adjectives, List<String> animals) {
+
+    List<String> orgName = new List<String>();
+
+    for (String adj : adjectives) {
+        for (String anml : animals) {
+            orgName.add(adj + '-' + anml);
+        }
+    }
+
+    return orgName;
+}
