@@ -10,6 +10,8 @@ public boolean isSorted(List<Integer> numbers) {
         result = true;
     }else{
         for (Integer i = 0; i < tam; i++) {
+            
+            
             if (i == 0) {
                 aux = numbers[0];
             }else if(aux == numbers.get(i)) {
@@ -32,7 +34,7 @@ public boolean isSorted(List<Integer> numbers) {
                     break;
                 }
             }
-            aux = numbers[i];
+            aux = numbers.get(i);
         }
 
     }
