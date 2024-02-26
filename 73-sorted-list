@@ -16,11 +16,11 @@ public boolean isSorted(List<Integer> numbers) {
         }
 
         if (!result) {
-        for(Integer i =0; i < tam-1; i++) {
+        for(Integer i = 0; i < tam-1; i++) {
                 if(numbers[i] >= numbers[i+1]) {
-                    return true;
+                    result true;
                 }else {
-                    return false;
+                    result false;
                     break;
                 }
             }
