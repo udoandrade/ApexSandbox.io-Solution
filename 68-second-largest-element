@@ -1,0 +1,24 @@
+public Integer secondLargest(List<Integer> numbers) {
+    
+    numbers.sort();
+    Integer tam = 0;
+    tam = numbers.size();
+    Integer largestNumber = null;
+    Integer secondLargest = null;
+
+    if (tam == 0) return null;
+    if (tam == 1) return numbers[0];
+
+    for (Integer i = tam-1; i >= 0; i--) {
+        if (i == tam-1) {
+            largestNumber = numbers[tam-1];
+        }else {
+            if (largestNumber != numbers[i] && secondLargest == null) {
+                secondLargest = numbers[i];
+                break;
+            }
+        }
+    }
+
+    return secondLargest;
+}
