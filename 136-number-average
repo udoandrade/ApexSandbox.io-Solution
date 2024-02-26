@@ -1,0 +1,12 @@
+public Decimal average(List<Decimal> numbers){
+    
+    Decimal total = 0;
+    Integer tam = numbers.size();
+
+    for (Decimal d : numbers) {
+        total += d;
+    }
+
+    total = (total/tam).setScale(2);
+    return total;
+}
