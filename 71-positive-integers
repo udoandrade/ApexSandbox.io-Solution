@@ -4,10 +4,10 @@ public List<Integer> positiveIntegers(List<Integer> numbers) {
     List<Integer> positivesOnly = new List<Integer>();
 
     for (Integer i = 0; i < tam; i++) {
-        if (numbers[i] <= 0) {
-            numbers.remove(i);
+        if (numbers[i] > 0) {
+            positivesOnly.add(numbers[i]);
         }
     }
 
-    return numbers;
+    return positivesOnly;
 }
