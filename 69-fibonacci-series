@@ -1,0 +1,17 @@
+public List<Integer> fibonacciSeries(Integer n) {
+    
+    List<Integer> fibList = new List<Integer>();
+    if (n == 0) return null;
+    
+    for(Integer i = 0; i < n; i++) {
+        if (i == 0) {
+            fibList.add(1);
+        } else if (i == 1) {
+            fibList.add(1);
+        } else {
+            fibList.add(fibList.get(i-2) + fibList.get(i-1));
+        }
+    }
+
+    return fibList;
+}
