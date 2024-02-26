@@ -18,9 +18,9 @@ public boolean isSorted(List<Integer> numbers) {
         if (!result) {
         for(Integer i = 0; i < tam-1; i++) {
                 if(numbers[i] >= numbers[i+1]) {
-                    result true;
+                    result = true;
                 }else {
-                    result false;
+                    result = false;
                     break;
                 }
             }
