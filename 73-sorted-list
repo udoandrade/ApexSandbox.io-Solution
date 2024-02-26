@@ -1,40 +1,29 @@
 public boolean isSorted(List<Integer> numbers) {
     
-    Integer tam = 0;
-    tam = numbers.size();
-    Integer aux = 0;
+    Integer tam = numbers.size();
     Boolean result;
-    String order;
 
-    if (tam == 0 || tam == 1 || tam == 2) {
+    if (tam <= 2) {
         result = true;
-    }else{
-        for (Integer i = 0; i < tam; i++) {
-            
-            
-            if (i == 0) {
-                aux = numbers[0];
-            }else if(aux == numbers.get(i)) {
+    }else {
+        for (Integer i = 0; i < tam-1; i++) {
+            if (numbers[i] <= numbers[i+1]) {
+                result = true;
+            }else {
                 result = false;
                 break;
-            }else if (numbers.get(i) > aux) {
-                if (order == '' || order == 'asce') {
-                    order = 'asce';
-                    result = true;
-                } else {
-                    result = false;
-                    break;
-                }
-            }else if (numbers.get(i) < aux) {
-                if (order == '' || order == 'desc') {
-                    order = 'desc';
-                    result = true;
-                } else {
-                    result = false;
+            }
+        }
+
+        if (!result) {
+            Integer i =0; i < tam-1; i++) {
+                if(numbers[i] >= numbers[i+1]) {
+                    return true;
+                }else {
+                    return false;
                     break;
                 }
             }
-            aux = numbers.get(i);
         }
 
     }
