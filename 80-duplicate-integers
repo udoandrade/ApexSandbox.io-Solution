@@ -1,0 +1,13 @@
+public Boolean containsDuplicates(List<Integer> nums) {
+    
+    Set<Integer> numsSet = new Set<Integer>();
+    Integer tamList = 0;
+    Integer tamSet = 0;
+
+    tamList = nums.size();
+    numsSet.addAll(nums);
+    tamSet = numsSet.size();
+
+    if (tamList != tamSet) return true;
+    return false;
+}
