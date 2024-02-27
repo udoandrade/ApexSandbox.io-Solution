@@ -5,7 +5,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     for (Case caso : cases) {
         List<String> caseNames;
         if(!casosPorTipo.containsKey(caso.Type)) {
-            casosPorTipo.put(caso.Type, case.Name);
+            casosPorTipo.put(caso.Type, caso.Name);
         }else {
             caseNames.addAll(casosPorTipo.get(caso.Type));
             casosPorTipo.put(caso.Type, caseNames);
