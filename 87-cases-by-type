@@ -5,7 +5,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     for (Case caso : cases) {
         if (caso.Type != null) {
             if (!casosPorTipo.containsKey(caso.Type)) {
-                List<Case> novosTiposDeCasosList = new List<Case> novosTiposDeCasos();
+                List<Case> novosTiposDeCasos = new List<Case> novosTiposDeCasos();
                 novosTiposDeCasos.add(caso);
                 casosPorTipo.put(caso.Type, novosTiposDeCasos);
             }else {
