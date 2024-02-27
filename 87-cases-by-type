@@ -3,14 +3,13 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
     Map<String, List<Case>> casosPorTipo = new Map<String, List<Case>>();
 
     for (Case caso : cases) {
-        
         if (caso.Type != null) {
             if (!casosPorTipo.containsKey(caso.Type)) {
-                List<Case> novosTiposDeCasos;
+                List<Case> novosTiposDeCasosList = new List<Case> novosTiposDeCasos();
                 novosTiposDeCasos.add(caso);
                 casosPorTipo.put(caso.Type, novosTiposDeCasos);
             }else {
-                List<Case> tipoDeCasoExistente;
+                List<Case> tipoDeCasoExistente = new List<Case> tipoDeCasoExistente();
                 tipoDeCasoExistente = casosPorTipo.get(caso.Type);
                 tipoDeCasoExistente.add(caso);
                 casosPorTipo.put(caso.Type, tipoDeCasoExistente);
