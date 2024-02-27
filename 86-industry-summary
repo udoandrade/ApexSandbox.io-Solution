@@ -3,7 +3,7 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
     Map<String, Decimal> result = new Map<String,Decimal>();
     Decimal prevValue = 0;
 
-    for (Accout account : accounts) {
+    for (Account account : accounts) {
         if(!result.containsKey(account.Industry)) {
             result.put(account.Industry, account.AnnualRevenue);
         }else {
