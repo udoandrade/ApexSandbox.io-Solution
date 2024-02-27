@@ -8,8 +8,9 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
             casos.add(caso);
             casosPorTipo.put(caso.Type, casos);
         }else {
-            casos.addAll(casosPorTipo.get(caso.Type));
-            casosPorTipo.put(caso.Type, casos);
+            casosPorTipo.get(caso.Type).add(caso);
+            /* casos.addAll(casosPorTipo.get(caso.Type));
+            casosPorTipo.put(caso.Type, casos); */
         }
     }
 
