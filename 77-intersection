@@ -1,0 +1,8 @@
+public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
+    
+    set<Integer> set3 = new Set<Integer>();
+    set3.addAll(set1);
+    set3.retainAll(set2);
+
+    return set3;
+}
