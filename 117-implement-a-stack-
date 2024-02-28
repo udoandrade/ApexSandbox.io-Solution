@@ -6,19 +6,5 @@ public class Stack {
         objs.add(obj);
     }
     
-    public Object pop() {
-        if (!objs.isEmpty()) objs.remove(objs.size()-1);
-    }
     
-    public Integer size() {
-        if (objs?.size()) return objs.size();
-    }
-    
-    public Object peek(){
-        if (!objs?.isEmpty()) return objs.get(objs.size()-1);
-    }
-    
-    public Boolean isEmpty() {
-        if (!objs?.isEmpty()) return true;
-    }
 }
