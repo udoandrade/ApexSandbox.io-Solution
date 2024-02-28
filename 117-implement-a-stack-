@@ -1,9 +1,14 @@
 public class Stack {
     
     List<Object> objs = List<Object>();
+
+    public Stack() {
+        this.stackList = new List<Object>();
+    }
     
     public void push(Object obj) {
         objs.add(obj);
     }
-
+    
+    
 }
