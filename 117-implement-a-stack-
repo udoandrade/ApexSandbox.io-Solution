@@ -19,7 +19,7 @@ public class Stack {
     }
     
     public Integer size() {
-        if (objs?.size()) return objs.size();
+        return objs.size();
     }
     
     public Object peek(){
