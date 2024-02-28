@@ -11,7 +11,11 @@ public class Stack {
     }
     
     public Object pop() {
-        if (!objs.isEmpty()) return objs.remove(objs.size()-1);
+        if (!isEmpty) {
+            Object obj = objs.remove(objs.size()-1);
+            return obj;
+        }
+        return null;
     }
     
     public Integer size() {
@@ -23,6 +27,6 @@ public class Stack {
     }
     
     public Boolean isEmpty() {
-        if (!objs?.isEmpty()) return true;
+        return objs.isEmpty();
     }
 }
