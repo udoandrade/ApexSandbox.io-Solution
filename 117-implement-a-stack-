@@ -5,6 +5,5 @@ public class Stack {
     public void push(Object obj) {
         objs.add(obj);
     }
-    
-    
+
 }
