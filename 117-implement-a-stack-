@@ -3,7 +3,7 @@ public class Stack {
     List<Object> objs;
 
     public Stack() {
-        this.stackList = new List<Object>();
+        this.objs = new List<Object>();
     }
     
     public void push(Object obj) {
