@@ -23,7 +23,7 @@ public class Stack {
     }
     
     public Object peek(){
-        if (!isEmpty()) return objs[objs.size()-1];
+        return objs[objs.size()-1];
     }
     
     public Boolean isEmpty() {
