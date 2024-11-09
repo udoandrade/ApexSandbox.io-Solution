@@ -7,7 +7,6 @@ public static Integer findLast(List<Integer> nums, Integer target) {
        if (n == target) {
            aux += 1;
            result = aux;
-           break;
        } else {
            aux += 1;
        }
