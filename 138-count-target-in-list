@@ -1,9 +1,9 @@
 public Integer findTargetCount(List<Integer> nums, Integer target) {
     
     Integer result = 0;
-    
+
     for (Integer n: nums) {
-        if (n == target) n += 1;    
+        if (n == target) n+=;    
     }
 
     return result;
