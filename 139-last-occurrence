@@ -1,7 +1,7 @@
 public static Integer findLast(List<Integer> nums, Integer target) {
    
    Integer result = -1;
-   Integer aux = 0;
+   Integer aux = -1;
 
    for (Integer n : nums) {
        if (n == target) {
