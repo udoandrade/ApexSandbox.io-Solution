@@ -1,0 +1,17 @@
+public static Integer findLast(List<Integer> nums, Integer target) {
+   
+   Integer result = -1;
+   Integer aux = 0;
+
+   for (Integer n : nums) {
+       if (n == target) {
+           aux += 1;
+           result = aux;
+           break;
+       } else {
+           aux += 1;
+       }
+   }
+
+   return result;
+}
